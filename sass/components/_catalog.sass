@@ -1,0 +1,61 @@
+.catalog
+    &-wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-bottom: 15px
+    &-photo
+        display: block
+        height: 400px
+        position: relative
+        &:after 
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: rgba(0,0,0,.7)
+            opacity: 0
+            transition: 0.9s
+            z-index: 1
+        &:hover
+            &:after, .catalog-photo_title
+                opacity: 1
+        &_title
+            z-index: 2
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            width: 100%
+            color: $txt-white
+            font-weight: normal
+            text-align: center
+            font-size: 40px
+            opacity: 0
+            transition: 0.5s
+        &_one
+            flex-basis: 29%
+            background: #16152c url('../images/catalog/букет.jpg') no-repeat center
+            background-size: cover
+        &_two
+            flex-basis: 30%
+            background: #16152c url('../images/catalog/ящик.jpg') no-repeat center
+            background-size: cover
+        &_three
+            flex-basis: 39%
+            background: #16152c url('../images/catalog/корзина.jpg') no-repeat center bottom
+            background-size: cover
+        &_four
+            flex-basis: 39%
+            background: #16152c url('../images/catalog/коробка.jpg') no-repeat center bottom -50px
+            background-size: cover
+        &_five
+            flex-basis: 30%
+            background: #16152c url('../images/catalog/интерьерная.jpg') no-repeat center 
+            background-size: cover
+        &_six
+            flex-basis: 29%
+            background: #16152c url('../images/catalog/подарки.jpg') no-repeat center 
+            background-size: cover

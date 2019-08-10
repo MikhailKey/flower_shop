@@ -1,0 +1,46 @@
+.feedback
+    &-row
+        display: flex
+        flex-wrap: wrap
+    &-button
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        margin-top: 30px
+        background: $logo-color
+        transition: 0.5s
+        
+        &:hover
+            background: $title-color
+    &-item
+        width:calc( ( 100%) / 3 )
+        height: 450px
+        background: red
+        &_info
+            position: absolute
+            top: 20%
+            left: 50%
+            width: 80%
+            transform: translate(-50%)
+        &_one
+            background: #000 url(../images/feedback/feedback-4.jpg) no-repeat center 
+            background-size: cover
+        &_two
+            background: #000 url(../images/feedback/feedback-3.jpg) no-repeat center 
+            background-size: cover
+        &_three
+            background: #000 url(../images/feedback/feedback-1.jpg) no-repeat center 
+            background-size: cover
+        &_four
+            background: #000 url(../images/feedback/feedback-2.jpg) no-repeat center 
+            background-size: cover
+        &_five
+            background: #000 url(../images/feedback/feedback-5.jpg) no-repeat center 
+            background-size: cover
+    &-comment
+        background: #EDEDED
+        position: relative
+        &_text
+            margin-top: 10px
+            font-size: 30px
+            color: $txt-color
