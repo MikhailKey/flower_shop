@@ -6,6 +6,7 @@
         margin: 0 auto
         display: flex
         justify-content: center
+        flex-wrap: wrap
         margin-top: 30px
         background: $logo-color
         transition: 0.5s
@@ -13,7 +14,7 @@
         &:hover
             background: $title-color
     &-item
-        width:calc( ( 100%) / 3 )
+        flex-basis: 33.3333%
         height: 450px
         background: red
         &_info
