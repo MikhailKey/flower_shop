@@ -1,8 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
 
 	//slider
-	
-
     let slideIndex = 1,
 	slides = document.getElementsByClassName('ourshop-slider-item'),
 	prev = document.querySelector('.prev'),
@@ -46,18 +44,23 @@ dotsWrap.addEventListener('click', function(e) {
 	}
 })
 //popup
-let more = document.querySelector('.hero-info_button'),
+let more = document.querySelector('.offer-button'),
 overlay = document.querySelector('.popup-bg'),
 close = document.querySelector('.popup-close');
 
 more.addEventListener('click', function() {
-	this.classList.add('more-splash');
 	overlay.style.display = 'block';
 	document.body.style.overflow = 'hidden';
 })
 close.addEventListener('click', function() {
 	overlay.style.display = 'none';
-	more.classList.remove('more-splash');
 	document.body.style.overflow = 'visible';
 })
+
+//scroll
+$("a[href^='#']").click(function () {
+	var _href = $(this).attr("href");
+	$("html, body").animate({ scrollTop: $(_href).offset().top  + "px"},1000);
+return false;
+});
 });

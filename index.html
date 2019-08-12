@@ -33,20 +33,41 @@
                         <img class="popup-flower popup-flower_one" src="/images/popup/цветы-3.png" alt="flower">
                         <img class="popup-flower popup-flower_two" src="images/popup/цветы-4.png" alt="flower">
                         <span class="popup-close">&times;</span>
+                         <p class="popup-time">(Рассчетное время ожидания ответа - менее 10 минут)</p>
                     </div>
+                   
             </div>
         <div class="hero">
+                <nav role="navigation">
+                    <div class="navigation-circle"></div>
+                        <div id="menuToggle">
+                            <input type="checkbox" />
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <ul id="menu">
+                            <a class="menuToggle-link" href=#about><li>О нас</li></a>
+                            <a class="menuToggle-link" href=#catalog><li>Каталог </li></a>
+                            <a class="menuToggle-link" href=#ourshop><li>Наш магазин</li></a>
+                            <a class="menuToggle-link" href=#delivery><li>О доставке</li></a>
+                            <a class="menuToggle-link" href=#feedback><li>Отзывы</li></a>
+                            <a class="menuToggle-link" href=#videomap><li>Как добраться</li></a>
+                            <a class="menuToggle-link" href=#contacts><li>Контакты</li></a>
+                            <a class="offer-button" href="#"><li>Оставить заявку</li></a>
+                            </ul>
+                        </div>     
+                </nav>
             <img class="hero-logo" src="./images/hero/hero-logo.png" alt="Лавка Цветочницы">
             <div class="container">
                 <div class="hero-info">
                     <p class="hero-info_phone">+8(8452) 333 22 11</p>
-                    <a href="#"><button class="hero-info_button button">Оставить заявку</button></a>
+                    <a href="#"><button class="hero-info_button button offer-button">Оставить заявку</button></a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section class = "section about">
+        <section id="about" class = "section about">
             <div class="container">
                 <div class="about-title">
                     <img class="about-title_image" src="/images/about/title.png" alt="title-line">
@@ -63,7 +84,7 @@
                 </div>
             </div>
         </section>
-        <section class="section catalog">
+        <section id="catalog" class="section catalog">
             <div class="container catalog-border">
                 <div class="main-title">
                     <img class="main-title_image" src="/images/title/flower-left.png" alt="left flower">
@@ -109,7 +130,7 @@
             </div>
             
         </section>
-        <section class="section ourshop">
+        <section id="ourshop" class="section ourshop">
             <div class="container">
                     <div class="main-title">
                             <img class="main-title_image" src="/images/title/flower-left.png" alt="left flower">
@@ -147,7 +168,22 @@
                     </div>
             </div>
         </section>
-        <section class="section feedback">
+        <section id="delivery" class="section delivery">
+            <div class="container">
+                    <div class="main-title">
+                            <img class="main-title_image" src="/images/title/flower-left.png" alt="left flower">
+                            <p class="main-title_text">О доставке</p>
+                            <img class="main-title_image" src="/images/title/flower-right.png" alt="right flower">
+                    </div>
+                    <p class="delivery-text">
+                            Мы с пониманием подходим к доставке цветов независимо от времени года. Зимой курьер привезёт в упаковочной бумаге, чтобы холод никак не сказался на состоянии цветов, а летом букеты доставляются в вазах с водой и с кондиционером. 
+                    </p>
+                    <p class="delivery-text delivery-lower">
+                            Будьте уверены, цветы прибудут в идеальном состоянии!
+                    </p>
+            </div>
+        </section>
+        <section id="feedback" class="section feedback">
             <div class="container">
                 <div class="main-title">
                     <img class="main-title_image" src="/images/title/flower-left.png" alt="left flower">
@@ -198,7 +234,7 @@
                 <a href="#"><button class="button feedback-button">Смотреть другие отзывы в инстаграме</button></a>
             </div>
         </section>
-        <section class="section videomap">
+        <section id="videomap" class="section videomap">
             <div class="container">
                 <div class="videomap-wrap">
                     <video class="videomap-bg" src="/images/walking/city-walking.mp4" loop autoplay></video>
@@ -213,7 +249,7 @@
                 </div>
             </div>
         </section>
-        <section class="section contacts">
+        <section id="contacts" class="section contacts">
             <div class="container">
                     <div class="main-title">
                             <img class="main-title_image" src="/images/title/flower-left.png" alt="left flower">
@@ -234,6 +270,10 @@
         </section>
             
     </main>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

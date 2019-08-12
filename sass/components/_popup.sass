@@ -7,13 +7,12 @@
         width: 100%
         height: 100vh
         background-color: rgba(0, 0, 0, 0.5)
-        overflow: hidden
         position: fixed
         z-index: 99
         display: none
     &-content
         position: relative
-        margin: 100px auto 100px auto
+        margin: 50px auto 50px auto
         width: 560px
         height: auto
         padding: 20px 70px 10px 70px
@@ -75,6 +74,18 @@
         background: #7E7E7E
         color: #D0FCFF
         z-index: 1
+        transition: 0.3s
+        &:hover
+            background: #CD8888
+    &-time
+        position: absolute
+        left: 50%
+        width: 100%
+        bottom: -30px
+        color: #B8DDDF
+        font-size: 20px
+        text-align: center
+        transform: translateX(-50%)
 .fadeFast
     animation-name: fade
     animation-duration: 1s
