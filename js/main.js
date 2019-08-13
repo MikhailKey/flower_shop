@@ -44,7 +44,7 @@ dotsWrap.addEventListener('click', function(e) {
 	}
 })
 //popup
-let more = document.querySelector('.offer-button'),
+let more = document.querySelectorAll('.show-button'),
 overlay = document.querySelector('.popup-bg'),
 close = document.querySelector('.popup-close');
 

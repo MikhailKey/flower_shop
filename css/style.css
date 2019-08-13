@@ -113,11 +113,33 @@ a {
 }
 
 .hero {
-  background: #DEECED url("../../images/hero/hero-bg-3.jpg") no-repeat center top;
+  background: #DEECED url("../../images/hero/bg-clear.jpg") no-repeat center top;
   background-size: cover;
   width: 100%;
   height: 800px;
   position: relative;
+}
+
+.hero-items {
+  position: absolute;
+}
+
+.hero-items_top {
+  width: 850px;
+  top: 0;
+  left: 0;
+}
+
+.hero-items_bottom {
+  height: 850px;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-items_florist {
+  width: 600px;
+  bottom: 10px;
+  right: 100px;
 }
 
 .hero-info {
@@ -134,12 +156,14 @@ a {
   color: #CD8888;
   font-size: 30px;
   margin-right: 30px;
+  z-index: 1;
 }
 
 .hero-info_button {
   background: #E2C0C0;
   color: #D0FCFF;
   padding: 10px 30px;
+  z-index: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -861,5 +885,10 @@ nav {
 #menuToggle input:checked ~ ul {
   -webkit-transform: none;
           transform: none;
+}
+
+#menuToggle input:checked ~ body {
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
 }
 /*# sourceMappingURL=style.css.map */
