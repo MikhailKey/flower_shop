@@ -292,15 +292,12 @@ a {
 }
 
 @media (max-width: 420px) {
-  .hero {
-    height: 500px;
-  }
   .hero-items_bottom {
     height: 50%;
   }
   .hero-logo {
     top: 30%;
-    width: 300px;
+    width: 320px;
   }
   .hero-info {
     padding-top: 50px;
