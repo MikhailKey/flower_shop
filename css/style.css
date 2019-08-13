@@ -7,9 +7,9 @@
 }
 
 @font-face {
-  font-family: 'Caveat', cursive;
-  src: url("../../fonts/Caveat-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: 'Caveat';
+  src: local("Caveat Regular"), local("Caveat-Regular"), url("../../fonts/Caveatregular.woff2") format("woff2"), url("../../fonts/Caveatregular.woff") format("woff"), url("../../fonts/Caveatregular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
 
