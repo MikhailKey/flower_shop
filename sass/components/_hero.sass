@@ -7,7 +7,7 @@
     &-items
         position: absolute
         &_top
-            width: 850px
+            width: 800px
             top: 0
             left: 0
         &_bottom
@@ -41,3 +41,69 @@
         left: 50%
         top: 20%
         transform: translateX(-50%)
+@media (max-width: 1400px)
+    .hero
+        &-logo
+            width: 650px
+        &-items
+            &_top
+                width: 700px
+            &_bottom
+                height: 750px
+            &_florist
+                width: 550px
+@media (max-width: 1170px)
+    .hero
+        &-items
+            &_top
+                width: 600px
+            &_bottom
+                height: 650px
+            &_florist
+                width: 450px
+@media (max-width: 1000px)
+    .hero
+        &-logo
+            width: 500px
+        &-items
+            &_top
+                width: 500px
+@media (max-width: 876px) 
+    .hero
+        &-items
+            &_top
+                display: none
+@media (max-width: 576px)
+    .hero
+        height: 700px
+        &-logo
+            width: 400px
+        &-items
+            &_bottom
+                height: 70%
+            &_florist
+                width: 70%  
+        &-info
+            &_phone
+                margin-top: 10px
+                font-size: 20px
+            &_button
+@media (max-width: 500px)
+    .hero
+        height: 600px
+@media (max-width: 420px)
+    .hero
+        height: 500px
+        &-items
+            &_bottom
+                height: 50%
+        &-logo
+            top: 30%
+            width: 300px
+        &-info
+            padding-top: 50px
+            &_button
+                font-size: 15px
+            &_phone
+                font-size: 13px
+                

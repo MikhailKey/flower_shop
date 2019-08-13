@@ -39,3 +39,37 @@ main
         height: 46px
 a
     text-decoration: none
+
+@media (max-width: 576px)
+    .main-title
+        &_text
+            font-size: 50px
+        &_image
+            margin-top: 15px
+            width: 120px
+
+@media (max-width: 510px)
+    .main-title
+        &_text
+            margin: 0 10px
+            font-size: 40px
+        &_image
+            margin-top: 7px
+            width: 100px
+
+@media (max-width: 450px)
+    .main-title
+        &_text
+            font-size: 30px
+        &_image
+            margin-top: 0px
+            width: 80px
+            height: 40px
+@media (max-width: 360px)
+    .main-title
+        &_text
+            font-size: 30px
+        &_image
+            margin-top: 10px
+            width: 60px
+            height: 20px
