@@ -63,4 +63,13 @@ $("a[href^='#']").click(function () {
 	$("html, body").animate({ scrollTop: $(_href).offset().top  + "px"},1000);
 return false;
 });
+//Скрытие меню при клике на ссылку
+let link = document.getElementsByClassName('menuToggle-link'),
+	switchStatus = document.querySelector('.switch');
+for (let i = 0; i < link.length; i++) {
+	link[i].addEventListener('click', function() {
+		switchStatus.checked = false
+	})
+}
+
 });

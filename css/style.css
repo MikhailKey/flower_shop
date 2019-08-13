@@ -1138,11 +1138,6 @@ nav {
           transform: none;
 }
 
-#menuToggle input:checked ~ body {
-  -webkit-transform: translateX(100px);
-          transform: translateX(100px);
-}
-
 @media (max-width: 700px) {
   .navigation-circle {
     width: 100px;
