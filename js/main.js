@@ -44,14 +44,17 @@ dotsWrap.addEventListener('click', function(e) {
 	}
 })
 //popup
-let more = document.querySelector('.show-button'),
+let more = document.getElementsByClassName('show-button'),
 overlay = document.querySelector('.popup-bg'),
 close = document.querySelector('.popup-close');
 
-more.addEventListener('click', function() {
-	overlay.style.display = 'block';
-	document.body.style.overflow = 'hidden';
-})
+for (let i = 0; i < more.length; i++) {
+	more[i].addEventListener('click', function() {
+		overlay.style.display = 'block';
+		document.body.style.overflow = 'hidden';
+	})
+}
+
 close.addEventListener('click', function() {
 	overlay.style.display = 'none';
 	document.body.style.overflow = 'visible';

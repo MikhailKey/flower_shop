@@ -310,6 +310,10 @@ a {
   }
 }
 
+.show-button {
+  cursor: pointer;
+}
+
 .about-title {
   text-align: center;
   position: relative;
