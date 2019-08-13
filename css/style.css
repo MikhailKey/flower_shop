@@ -415,10 +415,10 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 15px;
 }
 
 .catalog-photo {
+  margin-top: 15px;
   display: block;
   height: 400px;
   position: relative;
@@ -435,7 +435,7 @@ a {
   opacity: 0;
   -webkit-transition: 0.9s;
   transition: 0.9s;
-  z-index: 1;
+  z-index: 0;
 }
 
 .catalog-photo:hover:after, .catalog-photo:hover .catalog-photo_title {
@@ -483,7 +483,7 @@ a {
 .catalog-photo_four {
   -ms-flex-preferred-size: 39%;
       flex-basis: 39%;
-  background: #16152c url("../images/catalog/коробка.jpg") no-repeat center bottom -50px;
+  background: #16152c url("../images/catalog/коробка.jpg") no-repeat center bottom;
   background-size: cover;
 }
 
@@ -499,6 +499,68 @@ a {
       flex-basis: 29%;
   background: #16152c url("../images/catalog/подарки.jpg") no-repeat center;
   background-size: cover;
+}
+
+@media (max-width: 1023px) {
+  .catalog-photo {
+    height: 300px;
+  }
+  .catalog-photo:after {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+  }
+  .catalog-photo_title {
+    font-size: 30px;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .catalog-photo {
+    height: 250px;
+  }
+  .catalog-photo_title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .catalog-photo_one {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .catalog-photo_two {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .catalog-photo_three {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .catalog-photo_four {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .catalog-photo_five {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .catalog-photo_six {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+}
+
+@media (max-width: 500px) {
+  .catalog-photo {
+    height: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .catalog-photo {
+    height: 150px;
+  }
 }
 
 .ourshop-wrap {

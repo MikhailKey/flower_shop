@@ -4,8 +4,8 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-        margin-bottom: 15px
     &-photo
+        margin-top: 15px
         display: block
         height: 400px
         position: relative
@@ -19,7 +19,7 @@
             background: rgba(0,0,0,.7)
             opacity: 0
             transition: 0.9s
-            z-index: 1
+            z-index: 0
         &:hover
             &:after, .catalog-photo_title
                 opacity: 1
@@ -50,7 +50,7 @@
             background-size: cover
         &_four
             flex-basis: 39%
-            background: #16152c url('../images/catalog/коробка.jpg') no-repeat center bottom -50px
+            background: #16152c url('../images/catalog/коробка.jpg') no-repeat center bottom 
             background-size: cover
         &_five
             flex-basis: 30%
@@ -60,3 +60,42 @@
             flex-basis: 29%
             background: #16152c url('../images/catalog/подарки.jpg') no-repeat center 
             background-size: cover
+@media (max-width: 1023px)
+    .catalog
+        &-photo
+            height: 300px
+            &:after
+                background: rgba(0,0,0,.4)
+                opacity: 1
+            &_title
+                font-size: 30px
+                opacity: 1
+@media (max-width: 900px)
+    .catalog
+        &-photo
+            height: 250px
+            &_title
+                font-size: 25px
+@media (max-width: 700px)
+    .catalog
+        &-photo
+            &_one
+                flex-basis: 49%
+            &_two
+                flex-basis: 49%
+            &_three
+                flex-basis: 49%
+            &_four
+                flex-basis: 49%
+            &_five
+                flex-basis: 49%
+            &_six
+                flex-basis: 49%
+@media (max-width: 500px)
+    .catalog
+        &-photo
+            height: 200px
+@media (max-width: 400px)
+    .catalog
+        &-photo
+            height: 150px
