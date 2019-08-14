@@ -159,7 +159,7 @@ a {
   background: #DEECED url("../images/hero/bg-clear.jpg") no-repeat center bottom;
   background-size: cover;
   width: 100%;
-  height: 800px;
+  height: 100vh;
   position: relative;
 }
 
@@ -267,9 +267,6 @@ a {
 }
 
 @media (max-width: 576px) {
-  .hero {
-    height: 700px;
-  }
   .hero-logo {
     width: 400px;
   }
@@ -282,12 +279,6 @@ a {
   .hero-info_phone {
     margin-top: 10px;
     font-size: 20px;
-  }
-}
-
-@media (max-width: 500px) {
-  .hero {
-    height: 650px;
   }
 }
 
