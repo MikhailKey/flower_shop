@@ -44,3 +44,27 @@
             margin-top: 10px
             font-size: 30px
             color: $txt-color
+@media (max-width: 1200px) 
+    .feedback
+        &-item
+            height: 350px
+            &_info
+                img
+                    width: 40px
+        &-comment
+            &_text
+                font-size: 25px
+@media (max-width: 1050px) 
+    .feedback
+        &-item
+            height: 300px
+            &_info
+                img
+                    width: 30px
+        &-comment
+            &_text
+                font-size: 20px
+@media (max-width: 768px)
+    .feedback
+        &-item
+            flex-basis: 50%

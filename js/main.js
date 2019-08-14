@@ -44,7 +44,7 @@ dotsWrap.addEventListener('click', function(e) {
 	}
 })
 //popup
-let more = document.getElementsByClassName('show-button'),
+let more = document.getElementsByClassName('	show-button'),
 overlay = document.querySelector('.popup-bg'),
 close = document.querySelector('.popup-close');
 
