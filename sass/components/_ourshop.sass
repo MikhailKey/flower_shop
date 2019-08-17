@@ -1,4 +1,10 @@
 .ourshop
+    position: relative
+  
+    &-flower 
+        position: absolute
+        right: 0
+        top: 25%
     &-wrap
         height: 400px
         display: flex
@@ -99,3 +105,26 @@
     opacity: 1
 		 
 	 
+@media (max-width: 995px) 
+    .ourshop
+        &-wrap
+            margin-bottom: 400px
+            justify-content: center
+        &-info
+            flex-basis: 90%
+            text-align: center
+            margin-bottom: 50px
+        &-slider
+            flex-basis: 100%
+            margin: 0 40px
+@media (max-width: 740px)
+    .ourshop
+        &-info
+            flex-basis: 100%
+            font-size: 20px
+            margin-bottom: 30px
+@media (max-width: 440px)
+    .ourshop
+        &-info
+            margin-bottom: 10px
+            font-size: 15px

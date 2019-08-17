@@ -56,6 +56,10 @@
                 font-size: 25px
 @media (max-width: 1050px) 
     .feedback
+        &-row
+            align-items: center
+            justify-content: center
+            margin: auto
         &-item
             height: 300px
             &_info
@@ -66,5 +70,13 @@
                 font-size: 20px
 @media (max-width: 768px)
     .feedback
+        &-row
+           
         &-item
             flex-basis: 50%
+            &:last-child
+                display: none
+@media (max-width: 476px) 
+    .feedback
+        &-item
+            flex-basis: 100%
