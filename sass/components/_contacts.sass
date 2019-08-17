@@ -1,0 +1,48 @@
+.contacts
+    padding-bottom: 100px
+    padding-top: 0
+    &-wrap
+        display: flex
+        flex-wrap: wrap
+    &_text
+        font-size: 35px
+        color: $txt-color
+        padding-bottom: 5px
+    &_minititle
+        font-size: 35px
+        color: $title-color
+    &-info
+        flex-basis: 50%
+    &-media
+        margin-top: 20px
+    &-media__item
+        margin: 0 20px
+        &__first
+            margin-left: 0
+    &-map
+        flex-basis: 47%
+@media (max-width: 1200px)
+    .contacts
+        &-info
+            text-align: center
+        &-wrap
+            justify-content: center
+            flex-direction: column
+        &-media
+            margin-bottom: 50px
+@media (max-width: 1000px)
+    .contacts
+        &-map
+            flex-basis: 100%
+            width: 100%
+@media (max-width: 700px)
+    .contacts 
+        &_text
+            font-size: 20px
+        &_minititle
+            font-size: 25px
+            color: $title-color
+@media (max-width: 400px)
+    .contacts
+        &-media__item
+            width: 35px

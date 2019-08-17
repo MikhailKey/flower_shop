@@ -1,9 +1,10 @@
 @font-face {
-    font-family: 'Neucha', cursive;
-    src: url('../fonts/Neucha-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Neucha';
+    src: local('Neucha'), url('../fonts/neucha.woff2') format('woff2'), url('../fonts/neucha.woff') format('woff'), url('../fonts/neucha.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Caveat';
     src: local('Caveat Regular'), local('Caveat-Regular'), url('../fonts/Caveatregular.woff2') format('woff2'), url('../fonts/Caveatregular.woff') format('woff'), url('../fonts/Caveatregular.ttf') format('truetype');

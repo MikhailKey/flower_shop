@@ -89,6 +89,7 @@
             &_button
 @media (max-width: 500px)
     .hero
+        height: 90vh
 @media (max-width: 420px)
     .hero
         &-items
@@ -98,11 +99,14 @@
             top: 30%
             width: 320px
         &-info
-            padding-top: 50px
+            flex-direction: column-reverse
+            justify-content: flex-end
+            align-items: flex-end
             &_button
-                font-size: 15px
+                width: 200px
             &_phone
-                font-size: 13px
+                margin-right: 0
+                font-size: 25px
 .show-button
     cursor: pointer
                 

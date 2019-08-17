@@ -1,6 +1,5 @@
 .ourshop
     position: relative
-  
     &-flower 
         position: absolute
         right: 0
@@ -119,12 +118,18 @@
             margin: 0 40px
 @media (max-width: 740px)
     .ourshop
+        &-wrap
+            margin-bottom: 100px
         &-info
-            flex-basis: 100%
+            flex-basis: 90%
             font-size: 20px
             margin-bottom: 30px
 @media (max-width: 440px)
     .ourshop
+        &-slider
+            margin: 0
         &-info
             margin-bottom: 10px
             font-size: 15px
+    .prev, .next
+        width: 45px
