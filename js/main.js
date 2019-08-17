@@ -74,5 +74,4 @@ for (let i = 0; i < link.length; i++) {
 		switchStatus.checked = false
 	})
 }
-
 });
