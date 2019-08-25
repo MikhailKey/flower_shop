@@ -1,50 +1,8 @@
 window.addEventListener('DOMContentLoaded', function() {
 
-	//slider
-    let slideIndex = 1,
-	slides = document.getElementsByClassName('ourshop-slider-item'),
-	prev = document.querySelector('.prev'),
-	next = document.querySelector('.next'),
-	dotsWrap = document.querySelector('.ourshop-slider-dots'),
-	dots = document.getElementsByClassName('dot');
-	showSlides()
-function showSlides(n) {
-	if (n > slides.length) {
-		slideIndex = 1;
-	};
-	if (n < 1) {
-		slideIndex = slides.length;
-	};
-	for (let i=0; i < slides.length; i++) {
-		slides[i].style.display = 'none'
-	}
-	for (let i=0; i < dots.length; i++) {
-		dots[i].classList.remove('dot-active');
-	}
-	slides[slideIndex-1].style.display = 'block';
-	dots[slideIndex-1].classList.add('dot-active');
-}
-function plusSlides(n) {
-	showSlides(slideIndex +=n);
-}
-function currentSlide(n) {
-	showSlides(slideIndex = n)
-}
-prev.addEventListener('click', function() {
-	 plusSlides(-1);
-})
-next.addEventListener('click', function() {
-	plusSlides(1);
-})
-dotsWrap.addEventListener('click', function(e) {
-	for (let i=0; i < dots.length + 1; i++) {
-		if (e.target.classList.contains('dot') && event.target === dots[i-1]) {
-			currentSlide(i)
-		}
-	}
-})
+
 //popup
-let more = document.getElementsByClassName('	show-button'),
+let more = document.getElementsByClassName('show-button'),
 overlay = document.querySelector('.popup-bg'),
 close = document.querySelector('.popup-close');
 
@@ -75,3 +33,45 @@ for (let i = 0; i < link.length; i++) {
 	})
 }
 });
+
+document.addEventListener('mousedown', function(e) 
+{
+	let window = document.querySelector('.popup-content'),
+		overlay = document.querySelector('.popup-bg');
+
+	if (!window.contains(e.target)) 
+	{
+		overlay.style.display = 'none';
+		document.body.style.overflow = 'visible';
+	}
+})
+$(document).ready(function() {
+$('.owl-carousel').owlCarousel({
+	nav: true,
+	autoplay : 5000,
+	autoplaySpeed: 1500,
+	autoplayHoverPause: true,
+	smartSpeed: 500, 
+	navElement: 'button',
+	navText: ['<img class="ourshop-arrow"src="images/ourshop/arrows/left-arrow.svg" alt="">', '<img class="ourshop-arrow"src="images/ourshop/arrows/right-arrow.svg" alt="">'],
+	center: true,
+	loop: true,
+	items: 1,
+	margin: 10,
+	stagePadding: 150,
+	responsive: {
+		0: {
+			margin: 0,
+			stagePadding: 0,
+		},
+		600: {
+			margin: 0,
+			stagePadding: 0,
+		},
+		900: {
+			margin: 10,
+			stagePadding: 150,
+		}
+	}
+});
+})

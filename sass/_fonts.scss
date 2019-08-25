@@ -12,10 +12,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url('../fonts/playfairdisplay.woff2') format('woff2'), url('../fonts/playfairdisplay.woff') format('woff'), url('../fonts/playfairdisplay.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 @mixin Neucha {
     font-family: 'Neucha', cursive;
 }
 @mixin Caveat {
     font-family: 'Caveat', cursive;
     font-weight: 200;
+}
+@mixin Playfair {
+    font-family: 'Playfair Display', serif;
 }

@@ -17,6 +17,7 @@
         height: 450px
         background: red
         &_info
+            
             position: absolute
             top: 20%
             left: 50%
@@ -41,8 +42,10 @@
         background: #EDEDED
         position: relative
         &_text
+            +Playfair
             margin-top: 10px
-            font-size: 30px
+            font-size: 20px
+            line-height: 35px
             color: $txt-color
 @media (max-width: 1200px) 
     .feedback
@@ -53,7 +56,8 @@
                     width: 40px
         &-comment
             &_text
-                font-size: 25px
+                font-size: 15px
+                line-height: 25px
 @media (max-width: 1050px) 
     .feedback
         &-row
@@ -65,9 +69,6 @@
             &_info
                 img
                     width: 30px
-        &-comment
-            &_text
-                font-size: 20px
 @media (max-width: 768px)
     .feedback
         &-row
@@ -80,3 +81,4 @@
     .feedback
         &-item
             flex-basis: 100%
+        

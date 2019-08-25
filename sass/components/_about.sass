@@ -11,7 +11,7 @@
             font-weight: 200
             color: $txt-white
             position: absolute
-            top: 30%
+            top: 15%
             left: 50%
             transform: translateX(-50%)
     &-info
@@ -19,7 +19,9 @@
         margin: auto
         text-align: center
         &_text
-            font-size: 30px
+            +Playfair
+            font-size: 20px
+            line-height: 35px
             color: $txt-color
         &_image
             margin: 20px 0
@@ -27,11 +29,15 @@
     .about
         &-info
             width: 90%
-@media (max-width: 900px) 
+@media (max-width: 1000px)
     .about
         &-info
             &_text
-                font-size: 25px
+                font-size: 15px
+                line-height: 25px
+@media (max-width: 900px) 
+    .about
+        &-info
             &_image
                 width: 270px
 @media (max-width: 676px)
@@ -50,7 +56,9 @@
                 width: 320px
         &-info
             &_text
-                font-size: 20px
+                text-align: left
+                font-size: 12px
+                line-height: 20px
             &_image
                 width: 150px
 @media (max-width: 400px)
@@ -62,7 +70,5 @@
                 width: 280px
         &-info
             width: 95%
-            &_text
-                font-size: 17px
             &_image
                 width: 120px

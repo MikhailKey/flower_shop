@@ -1,0 +1,54 @@
+.bouquet
+    padding-top: 50px
+    width: 100%
+    min-height: 100%
+    max-height: auto
+    background: #d5daf0
+    background: -webkit-linear-gradient(to right, #d6fff7, #d5daf0) 
+    background: linear-gradient(to right, #d6fff7, #d5daf0)
+    &-text 
+        font-size: 25px
+        text-align: center
+        padding-bottom: 25px
+
+    &-catalog
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &-item
+        flex-basis: 23%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-bottom: 25px
+        position: relative
+        &__image
+            width: 100%
+            border-radius: 5px
+            box-shadow: 0px 10px 15px rgba(black, 0.2)
+
+        &__about
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: 100%
+            position: absolute
+            bottom: 0
+            left: 0
+            background: rgba(#7E7E7E, 0.5)
+            border-bottom-left-radius: 5px
+            border-bottom-right-radius: 5px
+
+        &__title
+            color: white
+            font-size: 20px
+            +Neucha
+            margin: 5px 0
+        &__button
+            width: 50%
+            background: $logo-color
+            color: #7E7E7E
+            padding: 5px 10px
+            margin-bottom: 20px

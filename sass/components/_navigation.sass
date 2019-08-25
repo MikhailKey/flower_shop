@@ -3,12 +3,25 @@ nav
     position: fixed    
     z-index: 10
     +Neucha
-.navigation-circle
-    width: 130px
-    height: 130px
-    background: #E2C0C0
-    border-bottom-right-radius: 150px
-    position: fixed
+.navigation
+    &-circle
+        width: 130px
+        height: 130px
+        background: #E2C0C0
+        border-bottom-right-radius: 150px
+        position: fixed
+    &-button
+        padding: 5px 10px
+        background: $title-color
+        text-align: center
+        margin-top: 10px
+        border-radius: 5px
+        cursor: pointer
+        color: #ededed
+        transition: 0.3s
+        &:hover 
+            background: $txt-color
+    
 #menuToggle
     display: block
     position: relative
@@ -51,13 +64,13 @@ nav
             transform-origin: 0% 100%
     input:checked ~ span
         opacity: 1
-        transform: rotate(45deg) translate(-2px, -1px)
+        transform: rotate(44deg) translate(-1px, -1px)
         background: #232323
         &:nth-last-child(3)
             opacity: 0
             transform: rotate(0deg) scale(0.2, 0.2)
         &:nth-last-child(2)
-            transform: rotate(-45deg) translate(0, -1px)
+            transform: rotate(-44deg) translate(0, -1px)
 #menu
     position: absolute
     width: 300px

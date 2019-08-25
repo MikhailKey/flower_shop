@@ -2,15 +2,18 @@
     position: relative
     background: #dfedea
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25)
+    padding-top: 25px
     &-bg
         z-index: 0
     &-index
         position: relative
     &-wrap
-        padding: 50px
+        padding: 25px
     &-text
+        +Playfair
         z-index: 100
-        font-size: 30px
+        font-size: 20px
+        line-height: 35px
         text-align: center
         color: #4B4B4B
     &-lower
@@ -18,7 +21,7 @@
     &-flower
         position: absolute
         &__top
-            width: 30%
+            width: 25%
             top: 0
             right: 0
         &__bottom
@@ -40,11 +43,15 @@
         &-wrap
             padding: 20px
         &-text
-            font-size: 25px
+            font-size: 15px
+            line-height: 25px
         &-flower
             &__bottom
                 display: none
 @media (max-width: 450px)
     .delivery
+        &-wrap
+            padding: 20px 0
         &-text
-            font-size: 20px
+            font-size: 12px
+            line-height: 20px
